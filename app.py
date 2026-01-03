@@ -12,7 +12,7 @@ model.load_model("model.json")
 
 @app.route('/')
 def home():
-    return "Calories Prediction API is running!"
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
